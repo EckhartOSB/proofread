@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+def proof(text, type, command)
+  puts '-'*70
+  puts type
+  puts '-'*70
+  File.popen command, "w" do |p|
+    p.puts text
+  end
+end
+
+text = $<.readlines
+proof text, "Spelling", "aspell pipe | egrep --color '^& [^ ]*'"
+proof text, "Weasel words", "weasels"
+proof text, "Passive voice", "passive"
+proof text, "Duplicated words", "dupwords"

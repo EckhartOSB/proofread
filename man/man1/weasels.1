@@ -1,0 +1,28 @@
+.\" man page for the weasels utility.
+.Dd July 24, 2010
+.Dt WEASELS 1
+.Os
+.Sh NAME
+.Nm weasels
+.Nd Ferret out weasel words
+.Sh SYNOPSIS
+.Nm
+.Ar file...
+.Sh DESCRIPTION
+The weasels utility looks for words that you should avoid when writing good English, and highlights those words in its output.
+It also provides the line number where each of these sneaky creatures hides.  If the file ~/.weasels exists, it must be a
+text file containing words to add to the standard list, separated by spaces and/or newlines.  Input can come from
+either a list of file arguments or stdin.
+.Sh OPTIONS
+None
+.Sh FILES
+~/.weasels
+.Sh SEE ALSO
+aspell(1), dupwords(1), passive(1), proofread(1)
+.Sh AUTHOR
+Sterling (Chip) Camden <sterling@camdensoftware.com>, adapted from Matt Might
+.Sh WWW
+<http://chipstips.com/?tag=rbproofread>
+<http://matt.might.net/articles/shell-scripts-for-passive-voice-weasel-words-duplicates/>
+.Sh BUGS
+None known.

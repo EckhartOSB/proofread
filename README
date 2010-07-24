@@ -1,0 +1,25 @@
+proofread
+
+Chip Camden, July, 2010
+http://chipstips.com/?tag=rbproofread
+http://bitbucket.org/sterlingcamden/proofread
+
+These scripts provide automated proofreading for English text:
+
+1. spelling
+2. "weasel words"
+3. passive voice
+4. duplicated words
+
+The script 'proofread' aggregates all four functions into one tool.
+
+These scripts can all take input from either stdin or file arguments.
+Thus, they make useful companions for editors like vi and vim.
+
+See the man pages for details.
+
+Matt Might provided the original versions of items 2-4 here:
+
+http://matt.might.net/articles/shell-scripts-for-passive-voice-weasel-words-duplicates/
+
+I have adapted these to my purposes, especially to support piping.

@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+lastword = ""
+ln = 0
+$<.each do |line|
+  ln += 1
+  words = line.split(/\W/).reject {|w| w.length < 1}
+  lastword = words.inject(lastword) do |l,n|
+    puts "#{ln}: #{n}" if n.casecmp(l) == 0
+    n
+  end
+end

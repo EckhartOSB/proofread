@@ -1,0 +1,24 @@
+.\" man page for the weasels utility.
+.Dd July 24, 2010
+.Dt PROOFREAD 1
+.Os
+.Sh NAME
+.Nm proofread
+.Nd Proofread text in English
+.Sh SYNOPSIS
+.Nm
+.Ar file...
+.Sh DESCRIPTION
+The proofread utlity proofs English text in four ways: spelling, weasel words, passive voice, and duplicated words.
+For these tasks, it relies on aspell(1), weasels(1), passive(1), and dupwords(1), respectively. Input can come from
+either a list of file arguments or stdin.
+.Sh OPTIONS
+None
+.Sh SEE ALSO
+aspell(1), dupwords(1), passive(1), weasels(1)
+.Sh AUTHOR
+Sterling (Chip) Camden <sterling@camdensoftware.com>
+.Sh WWW
+<http://chipstips.com/?tag=rbproofread>
+.Sh BUGS
+None known.
